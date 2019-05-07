@@ -16,11 +16,13 @@ class Header extends Component {
               <Globalstyle />
               <Iconfont />
               <HeaderWrapper>
-                  {/* <Link to="/"> */}
+                  <Link to="/">
                       <Logo href="/" />
-                  {/* </Link> */}
+                  </Link>
                   <Nav>
+                    <Link to="/">
                     <NavItem className="left active" href="/">首页</NavItem>
+                    </Link>
                     <NavItem className="left" href="https://www.jianshu.com/apps?utm_medium=desktop&utm_source=navbar-apps">下载App</NavItem>
                     { signIn ? <NavItem onClick={ signOut } className="right">注销</NavItem> : <Link to="/login"><NavItem className="right">登录</NavItem></Link>}
                     <NavItem className="right">Aa</NavItem>
